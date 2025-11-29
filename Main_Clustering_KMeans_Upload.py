@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import csv
 import re
 from Save_CSVs import export_all_filenames_with_clusters
+from Graph_PCA import plot_clusters_pca
 
 from PIL import Image, ImageOps, ImageDraw, ImageFont
 import pillow_heif
@@ -272,6 +273,10 @@ save_cluster_filenames(
     img_paths,
     os.path.join(preview_dir, "cluster_medoid10_filenames.csv")
 )
+
+# ====== Graph_PCA ======
+
+plot_clusters_pca(X_reduced, labels, kmeans_model=km_final)
 
 # ====== Export CSV with all images ======
 export_all_filenames_with_clusters(
