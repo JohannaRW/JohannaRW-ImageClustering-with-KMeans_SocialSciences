@@ -5,7 +5,7 @@ The analysis was conducted on 7,288 images (Last Generation) and 6,116 images (F
 The original image data are not publicly available due to ethical and/or data protection considerations. 
 
 Run:
-python 00_komplett_Main_Feature_Auswahl.py
+python Main_Clustering_KMeans_Upload.py
 
 Select:
 Feature mode: fc1
